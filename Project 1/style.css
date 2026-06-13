@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#fff;
+}
+
+.page{
+    width:90%;
+    margin:40px auto;
+    min-height:95vh;
+    position:relative;
+}
+
+/* Header */
+.header{
+    border:1px solid #cfcfcf;
+    height:52px;
+    display:flex;
+}
+
+.logo-box{
+    width:240px;
+    border-right:1px solid #cfcfcf;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:bold;
+    color:#2f78b7;
+}
+
+img{
+    width:200px;
+    height:50px;
+}
+
+.empty-box{
+    flex:1;
+}
+
+/* Title */
+.title{
+    margin-top:60px;
+    margin-left:12px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.title span{
+    font-weight:700;
+}
+
+/* Learner Row */
+.learner-table{
+    margin-top:25px;
+    width:100%;
+    border-collapse:collapse;
+}
+
+.learner-table td{
+    border:1px solid #cfcfcf;
+    padding:4px 8px;
+    height:26px;
+}
+
+.label{
+    width:170px;
+    background:#ececec;
+    font-weight:bold;
+}
+
+/* Grade Date */
+.grade-date{
+    text-align:right;
+    margin-top:60px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Feedback */
+.feedback-section{
+    margin-top:50px;
+}
+
+.feedback-title{
+    font-size:20px;
+    margin-bottom:4px;
+}
+
+.feedback-box{
+    border:1px solid #444;
+    height:140px;
+    width:100%;
+    padding:10px;
+    resize:none;
+    font-size:16px;
+}
+
+/* Footer */
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.footer-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.footer-table td{
+    border:1px solid #cfcfcf;
+    padding:3px 6px;
+    font-weight:bold;
+}
+
+.footer-left{
+    width:66%;
+}
+
+.footer-right{
+    width:34%;
+}
