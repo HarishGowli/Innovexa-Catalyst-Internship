@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Report</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="logo-box">
+          <img src="Chamilo.png" alt="logo" />
+        </div>
+        <div class="empty-box"></div>
+      </div>
+
+      <h1 class="title">
+        Grades from course:
+        <span>FULL STACK DEVELOPMENT ~ PROJECT 1</span>
+      </h1>
+
+      <table class="learner-table">
+        <tr>
+          <td class="label">Learner:</td>
+          <td>Harish Gowli</td>
+        </tr>
+      </table>
+
+      <div class="grade-date" id="grade-date"></div>
+
+      <script>
+        const today = new Date();
+        const day = String(today.getDate()).padStart(2, "0");
+        const month = String(today.getMonth() + 1).padStart(2, "0"); // months are 0-based
+        const year = today.getFullYear();
+
+        const formattedDate = `${day}/${month}/${year}`;
+        document.getElementById("grade-date").textContent =
+          `Grade generated on ${formattedDate}`;
+      </script>
+
+      <div class="feedback-section">
+        <div class="feedback-title">Feedback</div>
+
+        <textarea id="feedback" class="feedback-box"></textarea>
+
+        <br /><br />
+
+        <p id="message"></p>
+      </div>
+
+      <div class="footer">
+        <table class="footer-table">
+          <tr>
+            <td class="footer-left">BeezNest</td>
+            <td class="footer-right">1 / 1</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
